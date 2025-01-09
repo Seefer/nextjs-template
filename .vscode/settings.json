@@ -4,7 +4,7 @@
   "css.lint.unknownAtRules": "ignore",
   "typescript.validate.enable": false,
   "editor.rulers": [
-    { "column": 80, "color": "#37a3452b" },
-    { "column": 120, "color": "#d6617a29" }
+    { "column": 99, "color": "#37a34567" },
+    { "column": 120, "color": "#d6617a6c" }
   ]
 }

@@ -8,7 +8,22 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": []
+    "ignore": [
+      "node_modules",
+      ".next",
+      ".vercel",
+      ".vscode",
+      ".idea",
+      ".DS_Store",
+      "coverage",
+      "dist",
+      "build",
+      "out",
+      "public",
+      "pnpm-lock.yaml",
+      "yarn.lock",
+      "package-lock.json"
+    ]
   },
   "formatter": {
     "enabled": true,
@@ -26,18 +41,20 @@
       "recommended": true,
       "complexity": {
         "noForEach": "error"
+      },
+      "suspicious": {
+        "noDoubleEquals": "error"
       }
     }
   },
   "javascript": {
-    "globals": ["React"],
-
+    "globals": ["React", "ReactDOM"],
     "parser": {
       // Fixes css formatOnSave issue for Next.js @ decorators
       "unsafeParameterDecoratorsEnabled": true
     },
     "formatter": {
-      "quoteStyle": "double"
+      "quoteStyle": "single"
     }
   },
   "css": {
