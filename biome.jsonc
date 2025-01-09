@@ -1,9 +1,10 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "vcs": {
-    "enabled": false,
+    "enabled": true,
     "clientKind": "git",
-    "useIgnoreFile": false
+    "useIgnoreFile": true,
+    "defaultBranch": "main"
   },
   "files": {
     "ignoreUnknown": false,
@@ -22,11 +23,17 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "complexity": {
+        "noForEach": "error"
+      }
     }
   },
   "javascript": {
+    "globals": ["React"],
+
     "parser": {
+      // Fixes css formatOnSave issue for Next.js @ decorators
       "unsafeParameterDecoratorsEnabled": true
     },
     "formatter": {
