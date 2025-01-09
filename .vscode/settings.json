@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "biomejs.biome",
+  "css.lint.unknownAtRules": "ignore",
+  "typescript.validate.enable": false,
+  "editor.rulers": [
+    { "column": 80, "color": "#37a3452b" },
+    { "column": 120, "color": "#d6617a29" }
+  ]
+}
