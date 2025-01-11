@@ -13,7 +13,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint && pnpm exec biome check --files-ignore-unknown=true",
+    "format": "biome check --files-ignore-unknown=true --fix"
   },
   "dependencies": {
     "next": "15.1.4",

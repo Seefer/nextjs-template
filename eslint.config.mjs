@@ -1,4 +1,5 @@
 import { FlatCompat } from '@eslint/eslintrc';
+import { glob } from 'node:fs/promises';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -11,6 +12,14 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  {
+    rules: {
+      'no-foreach': 'on',
+    },
+    globals: {
+      React: 'readonly',
+    },
+  },
 ];
 
 export default eslintConfig;
