@@ -10,9 +10,9 @@
     "ignoreUnknown": false,
     "ignore": [
       "node_modules",
+      "husky",
       ".next",
       ".vercel",
-      ".vscode",
       ".idea",
       ".DS_Store",
       "coverage",
@@ -20,6 +20,7 @@
       "build",
       "out",
       "public",
+      "package.json",
       "pnpm-lock.yaml",
       "yarn.lock",
       "package-lock.json"
@@ -40,25 +41,33 @@
     "rules": {
       "recommended": true,
       "complexity": {
-        "noForEach": "error"
+        "noForEach": "warn"
       },
       "suspicious": {
-        "noDoubleEquals": "error"
+        "noDoubleEquals": "warn"
+      },
+      "nursery": {
+        "useSortedClasses": {
+          "level": "error",
+          "fix": "safe",
+          "options": {}
+        }
       }
     }
   },
   "javascript": {
     "globals": ["React", "ReactDOM"],
-    "parser": {
-      // Fixes css formatOnSave issue for Next.js @ decorators
-      "unsafeParameterDecoratorsEnabled": true
-    },
+    "parser": { "unsafeParameterDecoratorsEnabled": true },
     "formatter": {
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "jsxQuoteStyle": "double",
       "quoteStyle": "single"
     }
   },
   "css": {
     "formatter": {
+      "enabled": true,
       "indentStyle": "space",
       "indentWidth": 2
     }

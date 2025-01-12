@@ -1,7 +1,9 @@
 {
-  "editor.formatOnSave": true,
   "editor.defaultFormatter": "biomejs.biome",
-  "css.lint.unknownAtRules": "ignore",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit"
+  },
   "typescript.validate.enable": false,
   "editor.rulers": [
     { "column": 99, "color": "#37a34567" },
