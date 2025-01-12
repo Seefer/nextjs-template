@@ -57,19 +57,10 @@
   },
   "javascript": {
     "globals": ["React", "ReactDOM"],
-    "parser": { "unsafeParameterDecoratorsEnabled": true },
     "formatter": {
       "trailingCommas": "all",
       "semicolons": "always",
-      "jsxQuoteStyle": "double",
       "quoteStyle": "single"
-    }
-  },
-  "css": {
-    "formatter": {
-      "enabled": true,
-      "indentStyle": "space",
-      "indentWidth": 2
     }
   }
 }
