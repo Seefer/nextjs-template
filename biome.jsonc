@@ -48,7 +48,7 @@
       },
       "nursery": {
         "useSortedClasses": {
-          "level": "error",
+          "level": "warn",
           "fix": "safe",
           "options": {}
         }

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=22",
+    "node": ">=20",
     "npm": "please-use-pnpm",
     "yarn": "please-use-pnpm",
     "pnpm": ">=9"
@@ -13,8 +13,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "pnpm exec biome check --files-ignore-unknown=true",
-    "format": "pnpm exec biome check --files-ignore-unknown=true --fix",
+    "lint": "pnpm exec biome check",
+    "format": "pnpm exec biome check --fix",
     "prepare": "husky"
   },
   "dependencies": {
@@ -24,6 +24,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
