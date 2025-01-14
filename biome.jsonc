@@ -8,7 +8,10 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "include": [".storybook/**/*.js"],
+    "include": [
+      ".storybook/**/*.@(ts|tsx|js|jsx|mjs|cjs)",
+      "*.stories.@(ts|tsx|js|jsx|mjs|cjs)"
+    ],
     "ignore": [
       "node_modules",
       "husky",
