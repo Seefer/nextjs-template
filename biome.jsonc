@@ -7,15 +7,14 @@
     "defaultBranch": "main"
   },
   "files": {
-    "ignoreUnknown": false,
-    "include": [
-      ".storybook/**/*.@(ts|tsx|js|jsx|mjs|cjs)",
-      "*.stories.@(ts|tsx|js|jsx|mjs|cjs)"
-    ],
+    "ignoreUnknown": true,
+    "include": [],
     "ignore": [
       "node_modules",
       "husky",
       ".next",
+      "next.config.js",
+      "next-env.d.ts",
       ".vercel",
       ".idea",
       ".DS_Store",
