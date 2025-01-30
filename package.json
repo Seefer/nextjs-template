@@ -17,9 +17,8 @@
     "lint:staged": "biome check --error-on-warnings --no-errors-on-unmatched --staged .",
     "format": "pnpm exec biome check --fix",
     "prepare": "husky",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
